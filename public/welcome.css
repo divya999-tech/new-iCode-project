@@ -1,0 +1,11 @@
+p {
+  text-align: center;
+  background-image: url(images/concrete-wall-3.png);
+  position: relative;
+  top: 350px;
+  font-size: 30px;
+  color: chocolate;
+}
+body {
+  background-image: url(images/cream-paper.png);
+}

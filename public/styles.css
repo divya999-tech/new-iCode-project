@@ -1,0 +1,40 @@
+#header {
+  background-image: url(images/image4.png);
+  font-family: Georgia;
+  display: inline;
+  margin-left: 35px;
+}
+#linked {
+  background-image: url(images/image4.png);
+  display: inline;
+  float: right;
+  margin-right: 25px;
+}
+.rounded-circle {
+  width: 80px;
+}
+#container {
+  background-image: url(images/Vintage.jpg);
+  max-width: 1350vw;
+  /*margin-left: 1vw;
+  margin-right: 1vw;*/
+  display: block;
+}
+
+footer {
+  background-image: url(images/paper.png);
+  text-align: center;
+}
+.navbar {
+  background-image: url(images/concrete-wall-3.png);
+}
+
+#footer-links .bi-google {
+  margin-right: 30px;
+}
+#footer-links .bi-facebook {
+  margin-right: 30px;
+}
+#footer-links a:hover {
+  color: crimson;
+}

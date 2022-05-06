@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Description of the products</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Menu Items</title>
+    <link rel="shortcut icon" href="images/pickles.jfif" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="product-script.js"></script>
+
+    <style>
+      article ul {
+        font-family: "Lucida Console", "Courier New", monospace;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      article li {
+        font-family: "Times New Roman", Times, serif;
+      }
+      #prod:hover {
+        margin-top: 15px;
+        color: darkcyan;
+      }
+      #prod1:hover {
+        color: darkmagenta;
+        margin-bottom: 10px;
+      }
+      #username {
+        display: inline;
+        margin-left: 270px;
+      }
+    </style>
+    <!--- <script>
+      window.onload = function () {
+        let username = document.getElementById("username1");
+
+        await fetch("/products")
+          .then((response) => response.json())
+          .then((data3) => console.log(data3));
+        username.append(`welcome user`);
+      };
+    </script>-->
+    <!-- <script>
+        onload = async ()=>{
+        let successMessage = document.getElementById("username");
+
+
+        let response = await fetch("/products").then((response) => await response.json());
+        if (response.status == 200) {
+          successMessage.innerText = `Success`;
+        }
+      }
+    </script>-->
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <span>Free shipping on orders within Canada</span>
+        <span>|</span>
+        <span>100% Trustworthy Experience</span>
+        <span id="useremail"></span>
+
+        <span id="linked"><a href="/login">Login</a></span>
+        <span id="linked"><a href="/register">Register</a></span>
+        <span id="linked" class="cart-link"
+          ><a href="cart.html"
+            ><i class="fas fa-shopping-cart">Cart</i>
+            <span id="cart">0</span></a
+          ></span
+        >
+      </div>
+
+      <!--Start of navigation bar-->
+
+      <nav
+        class="
+          navbar navbar-sm-expand
+          bg-light
+          navbar-light
+          justify-content-between
+        "
+      >
+        <!--Brand logo-->
+        <div class="container-fluid">
+          <a style="font-family: fantasy" class="navbar-brand" href="/"
+            ><img
+              src="images/pickles.jfif"
+              alt="Pickles"
+              class="rounded-circle"
+            />
+            Vedik Foods</a
+          >
+          <!--Start of unordered list for Navigation bar-->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about" target="_parent">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/menu" class="nav-link">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="col-auto">
+              <form method="POST" action="/products">
+                <button type="submit" class="btn btn-primary">Log Out</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--End of navigation bar -->
+      <article>
+        <h1 id="prod">Chicken Pickle</h1>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-primary">
+            Ingredients:
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-secondary">
+                1 kg chicken with bones, cut into bite sized pieces
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1 1/2 tbsps ginger garlic paste
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1 1/2 tbsps red chilli pwd
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1/2 tsp turmeric pwd
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                juice of 3 lemons, heat for 3 mt and cool
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1 1/2 – 2 tbsps salt (adjust)
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                4 tbsps oil
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item list-group-item-primary">
+            Preparation:
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-secondary">
+                Dry roast all the spices individually over low heat and cool.
+                Once cool, combine all the dry roasted ingredients and grind to
+                a fine pwd
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                Heat 4 tbsps oil in a heavy bottomed vessel, add chicken, ginger
+                garlic paste, red chilli pwd and salt and cook on high heat for
+                5 mts. Reduce heat to medium high and continue to cook till the
+                oil separates and there is hardly any water content. This frying
+                will take about 25 mts. This step is crucial to chicken pickle
+                making. Keep stirring in between
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                Heat 3/4 cup oil in another heavy bottomed vessel, add methi
+                seeds, curry leaves, dry red chillis, crushed garlic and saute
+                for a minute. Add the cooked chicken pieces along with any left
+                over gravy and oil. Combine well. Add the ground spice pwd and
+                combine well and cook on medium to high for 15-18 mts, stirring
+                in between
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                Add the cooled lemon juice and combine well and turn off heat.
+                Cool and store in an airtight bottle and refrigerate
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <hr />
+
+        <h1 id="prod1">Mutton Pickle</h1>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-primary">
+            Ingredients:
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-secondary">
+                500 gm - Boneless mutton, cut to small pieces
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1 tbsp - Ginger paste
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1 tbsp - Garlic paste
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1/2 tsp - Turmeric powder
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                4 tbsp - Coriander powder
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1 tsp - Black pepper powder
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1 tsp - Red chili powder
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                1 tsp - fennel seeds
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item list-group-item-primary">
+            Preparation:
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-secondary">
+                Heat good amount of oil in a heavy bottom pan. Add ginger -
+                garlic paste and fry till ginger- garlic is lightly browned.Then
+                add turmeric powder, red chili powder, black pepper powder,
+                coriander powder and fennel seeds. Fry on low heat for a minute
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                Add mutton pieces, stir and mix in well with the spices. Add
+                little water and salt to taste. Simmer and cook the meat till
+                well cooked. Add oil and fry meat till lightly browned
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                Heat oil in a pan. Add curry leaves, whole red chili, hing,
+                roasted powder (star anise, clove and cinnamon ). Fry for a
+                minute. Add to the meat, fry and mix in well. Then add vinegar
+                and cook for 2 to 3 minutes. Take off the stove and cool
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                Put the pickle in a sterilized container. Start using pickle
+                after a day or two of preparing it. Refrigerate after a day
+                outside. All the masala will settle into the meat by then
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+
+      <hr />
+      <footer>
+        <p>&copy; powered and managed by Divya</p>
+        <div id="footer-links">
+          <a href="https://www.google.ca/" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-google"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
+              /></svg
+          ></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              /></svg
+          ></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-twitter"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+              /></svg
+          ></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

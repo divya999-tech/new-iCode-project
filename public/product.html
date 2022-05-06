@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Products Page</title>
+    <link rel="shortcut icon" href="images/pickles.jfif" />
+
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a599e66946.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: burlywood;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .container1 {
+        margin-top: 20px;
+      }
+      .product5 {
+        margin-top: 20px;
+      }
+      .product6 {
+        margin-top: 15px;
+      }
+      /* * {
+        box-sizing: border-box;
+        border-color: rgb(114, 122, 122);
+      }
+      #column {
+        float: left;
+        width: 33.3%;
+        padding: 5px;
+      }
+      #column img {
+        height: 60%;
+      }
+
+      .row::after {
+        clear: both;
+        display: table;
+        content: "";
+      }
+      .container1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+      }
+      .btn {
+        margin-top: 5px;
+        margin-left: 1px;
+      }
+      #cartbutton {
+        margin-left: 1px;
+        width: 70%;
+      }
+
+      .container1 p {
+        margin-top: 5px;
+        margin-right: 5px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      #buttonsigns {
+        margin-left: 130px;
+        margin-top: 5px;
+      }
+      #buttonsigns input {
+        width: 10%;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="header">
+          <span>Free shipping on orders within Canada</span>
+          <span>|</span>
+          <span>100% Trustworthy Experience</span>
+
+          <span id="linked"><a href="/login">Login</a></span>
+          <span id="linked"><a href="/register">Register</a></span>
+          <span id="linked" class="cart-link"
+            ><a href="cart.html"
+              ><i class="fas fa-shopping-cart">Cart</i>
+              <span id="cart">0</span></a
+            ></span
+          >
+        </div>
+        <!--Start of navigation bar-->
+        <nav
+          class="
+            navbar navbar-sm-expand
+            bg-light
+            navbar-light
+            justify-content-between
+          "
+        >
+          <div class="container-fluid">
+            <!--Brand logo-->
+            <a style="font-family: fantasy" class="navbar-brand" href="/"
+              ><img
+                src="images/pickles.jfif"
+                alt="Pickles"
+                class="rounded-circle"
+              />
+              Vedik Foods</a
+            >
+            <!--Start of unordered list for Navigation bar-->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about" class="nav-link" target="_parent">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/menu" class="nav-link">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a href="/product" class="nav-link">Products</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/faq" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a href="/contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <article>
+        <div class="container1">
+          <div class="row">
+            <!------------------------------------------ 1st item----------------------------- -->
+            <div class="card">
+              <img
+                src="images/amla.jpg"
+                class="image"
+                alt="Amla pickle"
+                style="width: 100%"
+              />
+              <h1 class="title">Amla pickle</h1>
+              <p class="price">$9.99</p>
+              <p class="description">Some text about the Pickles</p>
+
+              <p><button class="cardbutton">Add to Cart</button></p>
+            </div>
+
+            <!-- <div class="col-md-2" id="column">
+              <p><strong>Amla pickle</strong></p>
+              <a href="cart.html"
+                ><img
+                  src="images/amla.jpg"
+                  class="img-thumbnail"
+                  width="100%"
+                  float="left"
+                  alt="Amla Pickle"
+              /></a>
+
+              <div id="buttonsigns">
+                <button><i class="fas fa-minus-circle fam1"></i></button>
+
+                <input type="text" id="number1" value="1" name="number" />
+                <button><i class="fas fa-plus-circle fap1"></i></button>
+                <p>Price: $9.99</p>
+                <button type="button" id="cartbutton" class="btn btn-primary">
+                  Add to cart
+                </button>
+              </div>
+            </div> -->
+            <!----------------------------------------------- 2nd item--------------------------------- -->
+            <div class="card">
+              <img
+                src="images/chicken.png"
+                class="image"
+                alt="Chicken pickle"
+                style="width: 100%"
+              />
+              <h1 class="title">Chicken pickle</h1>
+              <p class="price">$15.99</p>
+              <p class="description">Some text about the Pickles</p>
+              <p><button class="cardbutton">Add to Cart</button></p>
+            </div>
+
+            <!-- <div class="col-md-2" id="column">
+              <p><strong>Chicken pickle</strong></p>
+              <a href="cart.html"
+                ><img
+                  src="images/chicken.png"
+                  class="img-thumbnail"
+                  width="100%"
+                  float="center"
+                  alt="Chicken Pickle"
+              /></a>
+              <div id="buttonsigns">
+                <button>
+                  <i class="fas fa-minus-circle fam2"></i>
+                </button>
+
+                <input type="text" id="number2" value="1" name="number" />
+                <button><i class="fas fa-plus-circle fap2"></i></button>
+                <p>Price: $15.99</p>
+                <button type="button" id="cartbutton" class="btn btn-primary">
+                  Add to cart
+                </button>
+              </div>
+            </div> -->
+            <!-------------------------------------------- 3rd item----------------------------- -->
+            <div class="card">
+              <img
+                src="images/mango-new.png"
+                class="image"
+                alt="Mango pickle"
+                style="width: 100%"
+              />
+              <h1 class="title">Mango pickle</h1>
+              <p class="price">$10.99</p>
+              <p class="description">Some text about the Pickles</p>
+              <p><button class="cardbutton">Add to Cart</button></p>
+            </div>
+
+            <!-- <div class="col-md-2" id="column">
+              <p><strong>Mango pickle</strong></p>
+              <a href="cart.html"
+                ><img
+                  src="images/mango-new.png"
+                  class="img-thumbnail"
+                  width="100%"
+                  float="right"
+                  alt="Mango Pickle"
+              /></a>
+
+              <div id="buttonsigns">
+                <button>
+                  <i class="fas fa-minus-circle fam3"></i>
+                </button>
+
+                <input type="text" id="number3" value="1" name="number" />
+                <button><i class="fas fa-plus-circle fap3"></i></button>
+                <p>Price: $10.99</p>
+                <button type="button" id="cartbutton" class="btn btn-primary">
+                  Add to cart
+                </button>
+              </div>
+            </div> -->
+            <!-- <hr /> -->
+            <!-- ----------------------------------4th item------------------------- -->
+            <div class="card">
+              <img
+                src="images/garlic.jpg"
+                class="image"
+                alt="Garlic pickle"
+                style="width: 100%"
+              />
+              <h1 class="title">Garlic pickle</h1>
+              <p class="price">$7.99</p>
+              <p class="description">Some text about the Pickles</p>
+              <p><button class="cardbutton">Add to Cart</button></p>
+            </div>
+
+            <!-- <div class="col-md-2" id="column">
+              <p><strong>Garlic pickle</strong></p>
+              <a href="cart.html"
+                ><img
+                  src="images/garlic.jpg"
+                  class="img-thumbnail"
+                  width="100%"
+                  float="left"
+                  alt="Amla Pickle"
+              /></a>
+
+              <div id="buttonsigns">
+                <button>
+                  <i class="fas fa-minus-circle fam4"></i>
+                </button>
+
+                <input type="text" id="number4" value="1" name="number" />
+                <button><i class="fas fa-plus-circle fap4"></i></button>
+                <p>Price: $7.99</p>
+                <button type="button" id="cartbutton" class="btn btn-primary">
+                  Add to cart
+                </button>
+              </div>
+            </div> -->
+
+            <!------------------------------------------ 5th item----------------------------- -->
+            <div class="card product5">
+              <img
+                src="images/mutton-pickle.webp"
+                class="image"
+                alt="Mutton pickle"
+                style="width: 100%"
+              />
+              <h1 class="title">Mutton pickle</h1>
+              <p class="price">$19.99</p>
+              <p class="description">Some text about the Pickles</p>
+              <p><button class="cardbutton">Add to Cart</button></p>
+            </div>
+
+            <!-- <div class="col-md-2" id="column">
+              <p><strong>Mutton pickle</strong></p>
+              <a href="cart.html"
+                ><img
+                  src="images/mutton-pickle.webp"
+                  class="img-thumbnail"
+                  width="100%"
+                  float="left"
+                  alt="Amla Pickle"
+              /></a>
+
+              <div id="buttonsigns">
+                <button>
+                  <i class="fas fa-minus-circle fam5"></i>
+                </button>
+
+                <input type="text" id="number5" value="1" name="number" />
+                <button><i class="fas fa-plus-circle fap5"></i></button>
+                <p>Price: $19.99</p>
+                <button type="button" id="cartbutton" class="btn btn-primary">
+                  Add to cart
+                </button>
+              </div>
+            </div> -->
+            <!----------------------------------------- 6th item-------------------------- -->
+            <div class="card product6">
+              <img
+                src="images/lemon1.jpg"
+                class="image"
+                alt="Lemon pickle"
+                style="width: 100%"
+              />
+              <h1 class="title">Lemon pickle</h1>
+              <p class="price">$9.99</p>
+              <p class="description">Some text about the Pickles</p>
+              <p><button class="cardbutton">Add to Cart</button></p>
+            </div>
+
+            <!-- <div class="col-md-2" id="column">
+              <p><strong>Lemon pickle</strong></p>
+              <a href="cart.html"
+                ><img
+                  src="images/lemon.jpg"
+                  class="img-thumbnail"
+                  width="100%"
+                  float="left"
+                  alt="Amla Pickle"
+              /></a>
+
+              <div id="buttonsigns">
+                <button>
+                  <i class="fas fa-minus-circle fam6"></i>
+                </button>
+
+                <input type="text" id="number6" value="1" name="number" />
+                <button><i class="fas fa-plus-circle fap6"></i></button>
+                <p>Price: $9.99</p>
+                <button type="button" id="cartbutton" class="btn btn-primary">
+                  Add to cart
+                </button>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </article>
+      <footer>
+        <p>&copy; powered and managed by Divya</p>
+        <div id="footer-links">
+          <a href="https://www.google.ca/" target="_blank"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
